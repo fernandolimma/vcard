@@ -5,6 +5,18 @@ if ("serviceWorker" in navigator) {
         .catch(err => console.error("Erro ao registrar Service Worker:", err));
 }
 
+// Verificação Adicional Adicione uma verificação para alertar os usuários caso o navegador não suporte Service Workers
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+        .register("/service-worker.js")
+        .then(() => console.log("Service Worker registrado com sucesso"))
+        .catch(err => console.error("Erro ao registrar Service Worker:", err));
+} else {
+    console.warn("Service Worker não é suportado neste navegador.");
+}
+
+
+// Script para a funcionalidade de salvar contato (NÂO FUNCIONOU)
 document.getElementById("salvar-contato").addEventListener("click", () => {
     const contact = {
         name: "Fernando Lima",
@@ -26,13 +38,6 @@ document.getElementById("salvar-contato").addEventListener("click", () => {
         alert("Este dispositivo não suporta o recurso de compartilhamento!");
     }
 
-    if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-            .register("/service-worker.js")
-            .then(() => console.log("Service Worker registrado com sucesso"))
-            .catch(err => console.error("Erro ao registrar Service Worker:", err));
-    } else {
-        console.warn("Service Worker não é suportado neste navegador.");
-    }
+    
     
 });
