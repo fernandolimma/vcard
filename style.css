@@ -112,6 +112,7 @@ body {
 }
 
 .texto p, .texto a {
+    text-decoration: none;
     font-size: 12px;
     margin: 1px;
     margin-left: 10px;
@@ -167,6 +168,31 @@ body {
 
 #salvar-contato:hover {
     background-color: #a60918;
+}
+
+.compartilhar-contato {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#compartilhar-contato {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: #ecd71a;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+#compartilhar-contato:hover {
+    background-color: #ecd71a;
 }
 
 /* Responsividade */
