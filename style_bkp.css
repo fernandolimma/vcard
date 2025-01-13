@@ -1,45 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
 }
 
-body {
+
+body{
     background-color: #F2F5F9;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 10px;
+    height: 100vh;
 }
 
-.container {
-    width: 100%;
-    max-width: 320px;
+.container{
+    width: 250px;
     background-color: #FFF;
     border-radius: 20px;
     padding: 15px;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
 }
 
-.elementos {
+.elementos{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
 
-.pessoa {
+.pessoa{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.img {
+.img{
     background-image: url('img/perfil.jpg');
     width: 75px;
     height: 75px;
@@ -50,53 +52,56 @@ body {
 
 .pessoa h2 {
     margin-top: 10px;
-    font-size: 14px;
-}
-
-.pessoa p {
-    margin-top: 3px;
     font-size: 12px;
 }
 
-.social {
+.pessoa p{
+    margin-top: 3px;
+    font-size: 10px;
+}
+
+.social{
     width: 100%;
     margin-top: 20px;
 }
 
-.botoes {
+.botoes{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    padding: 0 30px;
 }
 
 .botoes a {
     text-decoration: none;
-    color: inherit;
+    color: inherit; /* Mantém a cor dos ícones */
 }
 
-.botoes i {
+
+.botoes i{
     background-color: #F2F5F9;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 11px;
 }
 
-.botoes i:hover {
+.botoes i:hover{
     background-color: #25375F;
     color: #FFF;
     cursor: pointer;
 }
 
-.contato {
+.contato{
     margin-top: 10px;
     width: 100%;
     background-color: #F2F5F9;
     border-radius: 10px;
     padding: 5px;
+
 }
 
 .secao {
@@ -104,44 +109,64 @@ body {
     padding: 10px 20px;
     background-color: #FFF;
     border-radius: 10px;
+
 }
 
-.secao:hover {
+.secao:hover{
     background-color: #FFF;
     cursor: pointer;
 }
 
-.texto p, .texto a {
-    font-size: 12px;
+.texto p{
+    font-size: 10px;
     margin: 1px;
     margin-left: 10px;
 }
 
+.texto a {
+    font-size: 10px;
+    margin: 1px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: inherit; /* Mantém a cor dos ícones */
+}
+
 .texto a:hover {
-    color: #C20B20;
+    color: #C20B20; /* Exemplo de cor ao passar o mouse */
 }
 
-.icone i {
-    font-size: 14px;
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.botao {
+.icone i{
+    font-size: 11px;
+}
+
+.botao{
     margin-top: 20px;
     display: flex;
     align-items: center;
     background-color: #25375F;
-    padding: 10px 16px;
+    padding: 8px 16px;
     color: #FFF;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 9px;
     border: 1px solid #25375F;
 }
 
-.botao:hover {
+.botao:hover{
     background-color: #F2F5F9;
     border: 1px solid #25375F;
     color: #25375F;
+}
+
+.botao p{
+    font-weight: bold;
+    margin-left: 10px;
 }
 
 .salvar-contato {
@@ -157,45 +182,21 @@ body {
     background-color: #C20B20;
     color: #FFFFFF;
     border: none;
-    padding: 12px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     transition: background-color 0.3s ease;
+}
+
+#salvar-contato i {
+    margin-right: 10px;
 }
 
 #salvar-contato:hover {
     background-color: #a60918;
 }
 
-/* Responsividade */
-@media (max-width: 480px) {
-    .container {
-        max-width: 90%;
-    }
 
-    .pessoa h2 {
-        font-size: 12px;
-    }
 
-    .pessoa p {
-        font-size: 10px;
-    }
-
-    .botoes i {
-        width: 30px;
-        height: 30px;
-        font-size: 12px;
-    }
-
-    .botao {
-        font-size: 10px;
-        padding: 8px 14px;
-    }
-
-    #salvar-contato {
-        font-size: 10px;
-        padding: 10px 16px;
-    }
-}
