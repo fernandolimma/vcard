@@ -1,7 +1,7 @@
 // Verificação adicional para alertar caso o navegador não suporte Service Workers
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker
-        .register("/service-worker.js")
+        .register("/service-worker.js") // Ajustar o caminho conforme local
         .then(() => console.log("Service Worker registrado com sucesso"))
         .catch(err => console.error("Erro ao registrar Service Worker:", err));
 } else {

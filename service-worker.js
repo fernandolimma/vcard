@@ -8,6 +8,7 @@ self.addEventListener('install', function(event) {
                 '/script.js',
                 '/img/icon-192x192.png',
                 '/img/icon-500x500.png',
+                '/img/perfil.jpg',
                 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'
             ]);
         }).catch(function(error) {

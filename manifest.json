@@ -2,7 +2,7 @@
   "name": "VCard",
   "short_name": "VCard",
   "description":"Tenha seu próprio Cartão de Visistas Inteligente",
-  "start_url": "/index.html",
+  "start_url": "/index.html", 
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#C20B20",
@@ -19,3 +19,4 @@
     }
   ]
 }
+
